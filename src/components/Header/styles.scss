@@ -1,0 +1,68 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 90px;
+  background-color: #ffffff;
+  &__logo,
+  &__menu,
+  &__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Hando Soft Trial", sans-serif;
+    font-style: normal;
+    cursor: pointer;
+  }
+  &__logo {
+    color: #394149;
+    line-height: 47px;
+    font-size: 36px;
+  }
+  &__menu {
+    font-size: 16px;
+    &__item {
+      color: #1c1e53;
+      margin: 0;
+      padding: 0px 10px;
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100px;
+        background: currentcolor;
+        transform: translateX(-110%);
+        transition: transform 1s ease;
+        overflow: hidden;
+      }
+
+      &:hover {
+        color: #5e3bee;
+      }
+      &:hover::before {
+        color: #5e3bee;
+        transform: translateX(110%);
+      }
+    }
+  }
+  &__contact {
+    &__button {
+      width: 128px;
+      height: 52px;
+      border-radius: 30px;
+      border: 1px solid #5e3bee;
+      color: #5e3bee;
+    }
+  }
+  &--scroll {
+    transition: linear 0.5s;
+    box-shadow: 0 2.2px 2.2px rgb(0 0 0 / 7%), 0 5.3px 5.3px rgb(0 0 0 / 5%),
+      0 10px 10px rgb(0 0 0 / 4%), 0 17.9px 17.9px rgb(0 0 0 / 4%),
+      0 33.4px 33.4px rgb(0 0 0 / 3%), 0 80px 80px rgb(0 0 0 / 2%);
+  }
+}
