@@ -1,0 +1,25 @@
+.skill {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0px;
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: #282938;
+    margin-bottom: 80px;
+    p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+    }
+    h1 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+    }
+  }
+}

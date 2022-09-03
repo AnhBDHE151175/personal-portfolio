@@ -1,5 +1,5 @@
 import "./style.scss";
-import { Row, Col, Image } from "antd";
+import { Row, Col } from "antd";
 import { MAIN_CONTENT } from "../../contansts/mainContanst";
 
 function MainContent() {

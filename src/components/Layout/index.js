@@ -2,8 +2,11 @@ import { Layout } from "antd";
 import Header from "../Header";
 import Footer from "../Footer";
 import { useEffect, useState } from "react";
+import MainContent from "../MainContent";
+import MySkill from "../MySkill";
+import "./styles.scss";
 
-function MainLayout({ children }) {
+function MainLayout() {
   const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
@@ -19,7 +22,10 @@ function MainLayout({ children }) {
   return (
     <Layout>
       <Header scroll={scroll} />
-      {children}
+      <div className="container">
+        <MainContent />
+        <MySkill />
+      </div>
       <Footer />
     </Layout>
   );

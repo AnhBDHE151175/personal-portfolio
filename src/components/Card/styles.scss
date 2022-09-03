@@ -1,0 +1,25 @@
+.card {
+  &__item {
+    padding: 20px 20px;
+    text-align: left;
+    background-color: #f5fcff;
+    &:hover {
+      border-bottom: 3px solid #5e3bee;
+      border-radius: 8px;
+    }
+  }
+  &__icon {
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+  }
+  &__descript {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
